@@ -1,5 +1,5 @@
 function plotLQRFile(Qx, Qphi, clfig)
-data = load(sprintf('lqr%d.%d.mat', Qx, Qphi), 'PosData');
+data = load(sprintf('data/lqr%d.%d.mat', Qx, Qphi), 'PosData');
 PosData = data.PosData;
 fig = figure();
 plotData(PosData);

@@ -22,7 +22,7 @@ R = 1;
 Klqr = designLQR(A2, B2, diag(Q), R);
 Klqr = round(Klqr, 2);
 
-data = load(sprintf('lqr%d.%d.mat', Q(1), Q(3)), 'PosData');
+data = load(sprintf('data/lqr%d.%d.mat', Q(1), Q(3)), 'PosData');
 PosData = data.PosData;
 t = PosData.time;
 x = PosData.signals(1).values;

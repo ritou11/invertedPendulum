@@ -1,0 +1,1422 @@
+Model {
+  Name			  "L1PLQR"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Sep 02 17:08:21 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Administrator"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Dec 26 14:05:15 2018"
+  ModelVersionFormat	  "1.%<AutoIncrement:496>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "rtwinext"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  100000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "external"
+  Solver		  "ode1"
+  SolverMode		  "SingleTasking"
+  StartTime		  "0.0"
+  StopTime		  "inf"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "0.005"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  off
+  MaxDataPoints		  "20000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "rtwin.tlc"
+  RTWTemplateMakefile	  "rtwintmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  RTWOptions		  " -aCCOptimize=1 -aEnforceIntegerDowncast=1 -aExtMod"
+"e=1 -aFoldNonRolledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1 -a"
+"GenerateReport=0 -aIncDataTypeInIds=0 -aIncHierarchyInIds=0 -aInlineInvariant"
+"Signals=0 -aInlineParameters=0 -aInlinedPrmAccess=\"Literals\" -aLocalBlockOu"
+"tputs=1 -aMaxRTWIdLen=31 -aPrefixModelToSubsysFcnNames=1 -aRTWVerbose=1 -aReb"
+"uildAll=0 -aRollThreshold=5 -aShowEliminatedStatements=0"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Derivative
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      Signum
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Sin
+      SineType		      "Time based"
+      Amplitude		      "1"
+      Bias		      "0"
+      Frequency		      "1"
+      Phase		      "0"
+      Samples		      "10"
+      Offset		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "L1PLQR"
+    Location		    [2, 78, 1022, 717]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      "S-Function"
+      Name		      " -pi~pi"
+      Ports		      [1, 1]
+      Position		      [175, 219, 215, 241]
+      BackgroundColor	      "lightBlue"
+      FunctionName	      "Change"
+      MaskType		      "Change"
+      MaskDescription	      "Change input signal between -pi and pi in 2*pi "
+"period.\nBlock input:\n    any double.\nBlock output:\n    between -pi and pi"
+".\neg:\n    If input is 1.5*pi, then output is -0.5*pi."
+      MaskHelp		      "This block, \"change\", input signal between -p"
+"i and pi in 2*pi period.\nBlock input:\n    any double.\nBlock output:\n    b"
+"etween -pi and pi.\neg:\n    input is 1.5*pi, then output is -0.5*pi."
+      MaskDisplay	      "plot([0:0.01:2*pi],sin([0:0.01:2*pi]));"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Angle Ref."
+      Position		      [70, 224, 105, 246]
+      BackgroundColor	      "cyan"
+      Value		      "pi"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [15, 155, 45, 185]
+      Value		      "0.1"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [410, 240, 440, 270]
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      Ports		      [1, 2]
+      Position		      [45, 181, 50, 294]
+      BackgroundColor	      "black"
+      ShowName		      off
+      Outputs		      "2"
+    }
+    Block {
+      BlockType		      Derivative
+      Name		      "Derivative"
+      Position		      [180, 263, 205, 287]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Derivative
+      Name		      "Derivative1"
+      Position		      [180, 183, 205, 207]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "GT400-SV Initialization"
+      Ports		      []
+      Position		      [35, 64, 125, 103]
+      BackgroundColor	      "lightBlue"
+      DropShadow	      on
+      Priority		      "0"
+      FunctionName	      "Initialize"
+      Parameters	      "openloop"
+      MaskType		      "Initialize"
+      MaskDescription	      "Initializing the googol GT400-SV motion control"
+" board.\nBlock parameter: \n    Control loop:   \n         0: closed-loop con"
+"trol.\n         1: opened-loop control. "
+      MaskHelp		      "This initialize block initializes the googol GT"
+"400-SV motion control board."
+      MaskPromptString	      "Control loop:"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "openloop=@1;"
+      MaskDisplay	      "disp('Initialize \\nGT400-SV');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "LQR Controller"
+      Ports		      [1, 1]
+      Position		      [285, 180, 335, 250]
+      BackgroundColor	      "orange"
+      DropShadow	      on
+      TreatAsAtomicUnit	      off
+      MaskPromptString	      "Kx|Kx'|Ka|Ka'"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVarAliasString      ",,,"
+      MaskVariables	      "x=@1;xdot=@2;angle=@3;angledot=@4;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "-36.51|-23.62|87.97|16.08"
+      Port {
+	PortNumber		1
+	Name			"Acc"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+	DataLogging		off
+	DataLoggingNameMode	"SignalName"
+	DataLoggingDecimateData	off
+	DataLoggingDecimation	"2"
+	DataLoggingLimitDataPoints off
+	DataLoggingMaxPoints	"5000"
+      }
+      System {
+	Name			"LQR Controller"
+	Location		[157, 146, 945, 628]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [25, 78, 55, 92]
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "LQR"
+	  Position		  [80, 61, 125, 109]
+	  BackgroundColor	  "green"
+	  Gain			  "[x,xdot,angle,angledot]"
+	  Multiplication	  "Matrix(K*u)"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Acc"
+	  Position		  [160, 78, 190, 92]
+	}
+	Line {
+	  SrcBlock		  "LQR"
+	  SrcPort		  1
+	  DstBlock		  "Acc"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "LQR"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Manual Switch"
+      Ports		      [2, 1]
+      Position		      [75, 142, 105, 178]
+      SourceBlock	      "simulink/Signal\nRouting/Manual Switch"
+      SourceType	      "Manual Switch"
+      sw		      "1"
+      action		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Manual Switch1"
+      Ports		      [2, 1]
+      Position		      [465, 247, 495, 283]
+      SourceBlock	      "simulink/Signal\nRouting/Manual Switch"
+      SourceType	      "Manual Switch"
+      sw		      "1"
+      action		      "0"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [4, 1]
+      Position		      [260, 159, 265, 266]
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [2, 1]
+      Position		      [690, 177, 695, 253]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux3"
+      Ports		      [2, 1]
+      Position		      [260, 106, 265, 144]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+      Port {
+	PortNumber		1
+	Name			"Err"
+	PropagatedSignals	", "
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+	DataLogging		off
+	DataLoggingNameMode	"SignalName"
+	DataLoggingDecimateData	off
+	DataLoggingDecimation	"2"
+	DataLoggingLimitDataPoints off
+	DataLoggingMaxPoints	"5000"
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Pos Ref."
+      Position		      [15, 139, 50, 161]
+      BackgroundColor	      "cyan"
+      Value		      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Real Control"
+      Ports		      [1, 2]
+      Position		      [585, 177, 640, 253]
+      BackgroundColor	      "green"
+      DropShadow	      on
+      TreatAsAtomicUnit	      off
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      Port {
+	PortNumber		1
+	Name			"Pos"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+	DataLogging		off
+	DataLoggingNameMode	"SignalName"
+	DataLoggingDecimateData	off
+	DataLoggingDecimation	"2"
+	DataLoggingLimitDataPoints off
+	DataLoggingMaxPoints	"5000"
+      }
+      Port {
+	PortNumber		2
+	Name			"Angle"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+	DataLogging		off
+	DataLoggingNameMode	"SignalName"
+	DataLoggingDecimateData	off
+	DataLoggingDecimation	"2"
+	DataLoggingLimitDataPoints off
+	DataLoggingMaxPoints	"5000"
+      }
+      System {
+	Name			"Real Control"
+	Location		[60, 85, 856, 634]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	212
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Acc"
+	  Position		  [75, 218, 105, 232]
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  " -pi~pi"
+	  Ports			  [1, 1]
+	  Position		  [485, 94, 525, 116]
+	  Orientation		  "left"
+	  BackgroundColor	  "lightBlue"
+	  AncestorBlock		  "googolbox/GT-400-SV Block Library/ -pi~pi"
+	  FunctionName		  "Change"
+	  MaskType		  "Change"
+	  MaskDescription	  "Change input signal between -pi and pi in 2"
+"*pi period.\nBlock input:\n    any double.\nBlock output:\n    between -pi an"
+"d pi.\neg:\n    If input is 1.5*pi, then output is -0.5*pi."
+	  MaskHelp		  "This block, \"change\", input signal betwee"
+"n -pi and pi in 2*pi period.\nBlock input:\n    any double.\nBlock output:\n "
+"   between -pi and pi.\neg:\n    input is 1.5*pi, then output is -0.5*pi."
+	  MaskDisplay		  "plot([0:0.01:2*pi],sin([0:0.01:2*pi]));"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  " 1"
+	  Position		  [385, 90, 415, 120]
+	  Orientation		  "left"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  " 2"
+	  Position		  [235, 285, 265, 315]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [235, 125, 265, 155]
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [235, 235, 265, 265]
+	  Value			  "10"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  Position		  [530, 180, 560, 210]
+	  Value			  "pi"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [240, 175, 270, 205]
+	  Gain			  "1.5"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Pendulum"
+	  Ports			  [2, 2]
+	  Position		  [425, 165, 475, 245]
+	  BackgroundColor	  "green"
+	  DropShadow		  on
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Pendulum"
+	    Location		    [216, 217, 784, 513]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vel"
+	      Position		      [65, 88, 95, 102]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Acc"
+	      Position		      [65, 148, 95, 162]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "AccCof"
+	      Position		      [135, 140, 165, 170]
+	      Gain		      "0.0002 * 0.0002/ (0.46 / 37500.0)"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Angle Encoder"
+	      Position		      [460, 150, 490, 180]
+	      Gain		      "-(pi * 2.0 / 2400)"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Get Cart's Position"
+	      Ports		      [0, 1]
+	      Position		      [330, 54, 420, 86]
+	      BackgroundColor	      "lightBlue"
+	      Priority		      "1"
+	      FunctionName	      "GetPos"
+	      Parameters	      "axis"
+	      MaskType		      "GetPos"
+	      MaskDescription	      "Getting the current axis position value"
+" in encoder' counts.\nBlock parameter: \n    Axis number:  must be between 1 "
+"and 6, default is 1.\nBlock output: \n    1~4: current axis' encoder reading "
+"counts.\n    5/6: assistant encoder 1/2 reading counts."
+	      MaskHelp		      "This block, GetPos, is intended for get"
+"ting the current axis position value in encoder' counts. This value represent"
+"s the actual position for the axis \nat the current sample time. This command"
+" operates for all profile modes. \nThe value returned is a 32-bit signed numb"
+"er with units of counts. \nThe range is -1,073,741,824 to 1,073,741,823.\n\nY"
+"ou can recalculate obtained value into meter units via multiplication by the "
+"scaler coefficient .\n\nBlock parameter: \n    Axis number:  must be between "
+"1 and 4, default is 1.\nBlock input: none.\nBlock output: \n        1~4: curr"
+"ent axis' encoder reading counts.\n        5/6: assistant encoder 1/2 reading"
+" counts."
+	      MaskPromptString	      "Axis number:"
+	      MaskStyleString	      "edit"
+	      MaskTunableValueString  "on"
+	      MaskEnableString	      "on"
+	      MaskVisibilityString    "on"
+	      MaskToolTipString	      "on"
+	      MaskVariables	      "axis=@1;"
+	      MaskDisplay	      "disp('GetPos');\nport_label('output', 1"
+", 'Pos');"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "1"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Get Pend's Angle"
+	      Ports		      [0, 1]
+	      Position		      [335, 149, 425, 181]
+	      BackgroundColor	      "lightBlue"
+	      Priority		      "1"
+	      FunctionName	      "GetPos"
+	      Parameters	      "axis"
+	      MaskType		      "GetPos"
+	      MaskDescription	      "Getting the current axis position value"
+" in encoder' counts.\nBlock parameter: \n    Axis number:  must be between 1 "
+"and 6, default is 1.\nBlock output: \n    1~4: current axis' encoder reading "
+"counts.\n    5/6: assistant encoder 1/2 reading counts."
+	      MaskHelp		      "This block, GetPos, is intended for get"
+"ting the current axis position value in encoder' counts. This value represent"
+"s the actual position for the axis \nat the current sample time. This command"
+" operates for all profile modes. \nThe value returned is a 32-bit signed numb"
+"er with units of counts. \nThe range is -1,073,741,824 to 1,073,741,823.\n\nY"
+"ou can recalculate obtained value into meter units via multiplication by the "
+"scaler coefficient .\n\nBlock parameter: \n    Axis number:  must be between "
+"1 and 4, default is 1.\nBlock input: none.\nBlock output: \n        1~4: curr"
+"ent axis' encoder reading counts.\n        5/6: assistant encoder 1/2 reading"
+" counts."
+	      MaskPromptString	      "Axis number:"
+	      MaskStyleString	      "edit"
+	      MaskTunableValueString  "on"
+	      MaskEnableString	      "on"
+	      MaskVisibilityString    "on"
+	      MaskToolTipString	      "on"
+	      MaskVariables	      "axis=@1;"
+	      MaskDisplay	      "disp('GetPos');\nport_label('output', 1"
+", 'Pos');"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "2"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Pos Encoder"
+	      Position		      [460, 55, 490, 85]
+	      Gain		      "0.46 / 37500.0"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Set Cart's Acc And Vel"
+	      Ports		      [2]
+	      Position		      [200, 103, 290, 147]
+	      BackgroundColor	      "lightBlue"
+	      Priority		      "1"
+	      FunctionName	      "SetAccVel"
+	      Parameters	      "axis, vel, pos"
+	      MaskType		      "SetAccVel"
+	      MaskDescription	      "Setting the current axis' acceleration "
+"and velocity.\n\nBlock parameter: \n    Axis number:\n        must be between"
+" 1 and 4, default is 1;\n    Back velocity: \n         After the current axis"
+"' limit reached, the moter will moves back as this  velocity, it must >=0;  "
+"\n    Back position: \n         After the current axis' limit reached, the mo"
+"ter will moves back to this postion relative to limit, it must >=0;\n\nBlock "
+"input:\n    Vel: the current axis' velocity.\n    Acc: the current axis' acce"
+"leration."
+	      MaskHelp		      "This SetAccVel bolck Sets the current a"
+"xis' acceleration and velocity.\nBlock parameter: \n    Axis number: must be "
+"between 1 and 4, default is 1.\nBlock input:\n    Vel: the current axis' velo"
+"city.\n    Acc: the current axis' acceleration."
+	      MaskPromptString	      "Axis number:|Back velocity:|Back positi"
+"on:"
+	      MaskStyleString	      "edit,edit,edit"
+	      MaskTunableValueString  "on,on,on"
+	      MaskCallbackString      "||"
+	      MaskEnableString	      "on,on,on"
+	      MaskVisibilityString    "on,on,on"
+	      MaskToolTipString	      "on,on,on"
+	      MaskVarAliasString      ",,"
+	      MaskVariables	      "axis=@1;vel=@2;pos=@3;"
+	      MaskDisplay	      "disp('          SetAccVel');\nport_labe"
+"l('input', 1, 'Vel');\nport_label('input', 2, 'Acc');"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "1|0.1|250000"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "VelCof"
+	      Position		      [135, 80, 165, 110]
+	      Gain		      "0.0002 / (0.46 / 37500.0)"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Pos"
+	      Position		      [530, 63, 560, 77]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Angle"
+	      Position		      [530, 158, 560, 172]
+	      Port		      "2"
+	    }
+	    Line {
+	      SrcBlock		      "Get Cart's Position"
+	      SrcPort		      1
+	      DstBlock		      "Pos Encoder"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Vel"
+	      SrcPort		      1
+	      DstBlock		      "VelCof"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Acc"
+	      SrcPort		      1
+	      DstBlock		      "AccCof"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Get Pend's Angle"
+	      SrcPort		      1
+	      DstBlock		      "Angle Encoder"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Pos Encoder"
+	      SrcPort		      1
+	      DstBlock		      "Pos"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Angle Encoder"
+	      SrcPort		      1
+	      DstBlock		      "Angle"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "VelCof"
+	      SrcPort		      1
+	      Points		      [0, 20]
+	      DstBlock		      "Set Cart's Acc And Vel"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "AccCof"
+	      SrcPort		      1
+	      Points		      [0, -20]
+	      DstBlock		      "Set Cart's Acc And Vel"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  Position		  [170, 285, 200, 315]
+	  UpperLimit		  "15"
+	  LowerLimit		  "-15"
+	}
+	Block {
+	  BlockType		  Signum
+	  Name			  "Sign"
+	  Position		  [180, 175, 210, 205]
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [600, 196, 615, 234]
+	  ShowName		  off
+	  Inputs		  "+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  Position		  [325, 124, 340, 206]
+	  Threshold		  "20*pi/180"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch2"
+	  Position		  [325, 234, 340, 316]
+	  Threshold		  "20*pi/180"
+	  InputSameDT		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Pos"
+	  Position		  [525, 148, 555, 162]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Angle"
+	  Position		  [575, 248, 605, 262]
+	  Port			  "2"
+	}
+	Line {
+	  SrcBlock		  "Acc"
+	  SrcPort		  1
+	  Points		  [0, 0; 25, 0]
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Saturation"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -35]
+	    DstBlock		    "Sign"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sign"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pendulum"
+	  SrcPort		  2
+	  Points		  [65, 0]
+	  Branch {
+	    Points		    [0, 30]
+	    DstBlock		    "Angle"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Pendulum"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  DstBlock		  "Pos"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  DstBlock		  " 2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " 1"
+	  SrcPort		  1
+	  Points		  [-75, 0; 0, 60]
+	  Branch {
+	    Points		    [0, 110]
+	    DstBlock		    "Switch2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Switch1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  " -pi~pi"
+	  SrcPort		  1
+	  DstBlock		  " 1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch2"
+	  SrcPort		  1
+	  Points		  [30, 0; 0, -50]
+	  DstBlock		  "Pendulum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 20]
+	  DstBlock		  "Pendulum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -110]
+	  DstBlock		  " -pi~pi"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " 2"
+	  SrcPort		  1
+	  DstBlock		  "Switch2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Switch2"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      Ports		      [4]
+      Position		      [760, 71, 805, 134]
+      Location		      [40, 148, 723, 812]
+      Open		      on
+      NumInputPorts	      "4"
+      TickLabels	      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+	axes3			"%<SignalLabel>"
+	axes4			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+	axes3			""
+	axes4			""
+      }
+      TimeRange		      "100"
+      YMin		      "-0.2~0~-1~-100"
+      YMax		      "0.3~4~4~300"
+      SaveToWorkspace	      on
+      SaveName		      "PosData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "20000"
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Sine Wave"
+      Position		      [365, 260, 395, 290]
+      SineType		      "Time based"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [130, 234, 145, 276]
+      ShowName		      off
+      Inputs		      "+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [130, 149, 145, 191]
+      ShowName		      off
+      Inputs		      "+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [510, 210, 530, 230]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      Position		      [735, 305, 795, 335]
+      VariableName	      "result"
+      MaxDataPoints	      "inf"
+      SampleTime	      "0.005"
+      SaveFormat	      "Array"
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "LQR Controller"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      Points		      [10, 0; 0, 105]
+      Branch {
+	Points			[-490, 0; 0, -80]
+	DstBlock		"Demux"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	Points			[0, 20]
+	DstBlock		"Derivative"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -25]
+	DstBlock		" -pi~pi"
+	DstPort			1
+      }
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      Points		      [60, 0]
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      Points		      [0, 0; 5, 0]
+      Branch {
+	Points			[0, 25]
+	DstBlock		"Derivative1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -20; 60, 0]
+	Branch {
+	  Points		  [30, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -35]
+	  DstBlock		  "Mux3"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      Name		      "Angle"
+      Labels		      [0, 0]
+      SrcBlock		      "Real Control"
+      SrcPort		      2
+      Points		      [0, 0; 25, 0]
+      Branch {
+	DstBlock		"Mux1"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -140]
+	DstBlock		"Scope1"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Angle Ref."
+      SrcPort		      1
+      Points		      [0, 10]
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      " -pi~pi"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	Points			[15, 0]
+	DstBlock		"Mux"
+	DstPort			3
+      }
+      Branch {
+	Points			[0, -95]
+	DstBlock		"Mux3"
+	DstPort			2
+      }
+    }
+    Line {
+      Name		      "Pos"
+      Labels		      [0, 0]
+      SrcBlock		      "Real Control"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	DstBlock		"Mux1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -115]
+	DstBlock		"Scope1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Derivative"
+      SrcPort		      1
+      Points		      [35, 0]
+      DstBlock		      "Mux"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Derivative1"
+      SrcPort		      1
+      Points		      [35, 0]
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      Name		      "Acc"
+      Labels		      [0, 0]
+      SrcBlock		      "LQR Controller"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	Labels			[2, 0]
+	Points			[0, -55; 380, 0; 0, -35]
+	DstBlock		"Scope1"
+	DstPort			4
+      }
+      Branch {
+	Points			[0, 5]
+	DstBlock		"Sum2"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "Err"
+      Labels		      [1, 0]
+      SrcBlock		      "Mux3"
+      SrcPort		      1
+      Points		      [455, 0; 0, -15]
+      DstBlock		      "Scope1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Manual Switch"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pos Ref."
+      SrcPort		      1
+      DstBlock		      "Manual Switch"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "Manual Switch"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Manual Switch1"
+      SrcPort		      1
+      Points		      [20, 0]
+      DstBlock		      "Sum2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      Points		      [15, 0; 0, -5]
+      DstBlock		      "Real Control"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "Manual Switch1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sine Wave"
+      SrcPort		      1
+      DstBlock		      "Manual Switch1"
+      DstPort		      2
+    }
+    Annotation {
+      Name		      "Googol Linear 1-Stage Inverted Pendulum LQR Con"
+"trol Demo"
+      Position		      [279, 20]
+      ForegroundColor	      "red"
+      FontName		      "Arial"
+      FontSize		      18
+      FontWeight	      "bold"
+      FontAngle		      "italic"
+    }
+    Annotation {
+      Name		      "Note: \n         How to run this demo:\n       "
+"  1.  Connect the Hardware correctly.\n         2.  Build all the demo.\n    "
+"     3.  Connect to the target.\n         4  Start real-time code"
+      Position		      [30, 422]
+      HorizontalAlignment     "left"
+    }
+    Annotation {
+      Position		      [459, 469]
+    }
+  }
+}

@@ -35,51 +35,73 @@ dx = x(2:end) - x(1:end-1);
 dphi = phi(2:end) - phi(1:end-1);
 dx_dt = dx./dt;
 dphi_dt = dphi./dt;
-tx = t(2:end);
-xx = x(2:end);
-phix = phi(2:end);
+t = t(2:end);
+x = x(2:end);
+phi = phi(2:end);
 xref = xref(2:end);
-accx = PosData.signals(4).values(2:end);
-cXt = [xx' - xref';dx_dt';phix';dphi_dt'];
-accCalc = -Klqr * cXt;
+acc = PosData.signals(4).values(2:end);
+cX = [x' - xref';dx_dt';phi';dphi_dt'];
+accCalc = -Klqr * cX;
 
 fig = figure();
+ax(1) = subplot(2,1,1);
 hold on;
-plot(tx, accx);
-plot(tx, accCalc);
+plot(t, acc);
+plot(t, accCalc);
+grid on; grid minor;
+legend('原始数据', '去除大尖峰后');
+legend('Location','southeast')
+ylabel('加速度 / m/s^2');
+title('加速度大尖峰去除');
+ax(2) = subplot(2,1,2);
+plot(t, xref);
+grid on; grid minor;
+ylabel('位置 / m');
+xlabel('时间t / s');
+title('位置设定值');
+linkaxes(ax,'x');
+xlim([min(t),max(t)]);
+saveas(fig, 'fig/acchuge.png');
+close(fig);
+%% Use preprocessLQR
+[t, X, acc, xref] = preprocessLQR(PosData, 100, 100);
 
-%% xref detection
-accErr = accx - accCalc';
-for i = 2:size(accErr) - 1
-    if abs(accErr(i)) > abs(accErr(i-1)) + abs(accErr(i+1))
-        accErr(i) = accErr(i+1);
-    end
-end
-xref = accErr / Klqr(1);
-xref = 0.1 * (xref > 0.05);
-figure();
-plot(tx,xref);
-
-Xt = [xx' - xref';dx_dt';phix';dphi_dt'];
-accCalcJz = -Klqr * Xt;
-
-figure();hold on;
-plot(tx, accx);
-plot(tx, accCalcJz);
-%% Up detection
-windowSize = 1000;
+windowSize = 100;
 b = (1/windowSize)*ones(1,windowSize);
 a = 1;
-phif = filter(b,a,phix);
-figure();
-subplot(2,1,1);
-plot(tx, phif);
-subplot(2,1,2);
-plot(tx, phix);
-t0i = find(abs(phif(round(windowSize/2):end)) < 5e-2, 1) + windowSize/2;
-%% Use preprocessLQR
-[tx, Xt, accx, xref] = preprocessLQR(PosData, 100, 100);
-accf = medfilt1(accx, 5);
 
-fig = figure();
-plotXtAcc(tx, Xt, accf);
+accf1 = medfilt1(acc, 5);
+accf2 = filter(b,a,acc);
+
+fig = figure('position',[0,0,400,800]);
+x = X(1,:);
+v = X(2,:);
+ax(1) = subplot(4, 1, 1);
+plot(t, v);
+title('速度');
+ylabel('dx / m/s');
+grid on; grid minor;
+ax(2) = subplot(4, 1, 2);
+plot(t, X(4,:));
+title('角速度');
+ylabel('d\phi / rad/s');
+grid on; grid minor;
+ax(3) = subplot(4, 1, 3);
+plot(t, acc);
+title('输入加速度');
+ylabel('a / m/s^2');
+grid on; grid minor;
+ax(4) = subplot(4, 1, 4);
+hold on;
+plot(t, accf1);
+plot(t, accf2);
+title('加速度(滤波后)');
+legend('中值滤波','均值滤波');
+legend('location','northwest');
+ylabel('a / m/s^2');
+grid on; grid minor;
+xlabel('时间t / s');
+linkaxes(ax,'x');
+xlim([min(t),max(t)]);
+saveas(fig, 'fig/acctiny.png');
+close(fig);

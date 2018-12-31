@@ -61,7 +61,7 @@ xlabel('时间t / s');
 title('位置设定值');
 linkaxes(ax,'x');
 xlim([min(t),max(t)]);
-saveas(fig, 'fig/acchuge.png');
+print(fig, 'fig/acchuge.png', '-dpng', '-r300');
 close(fig);
 %% Use preprocessLQR
 [t, X, acc, xref] = preprocessLQR(PosData, 100, 100);
@@ -103,5 +103,5 @@ grid on; grid minor;
 xlabel('时间t / s');
 linkaxes(ax,'x');
 xlim([min(t),max(t)]);
-saveas(fig, 'fig/acctiny.png');
+print(fig, 'fig/acctiny.png', '-dpng', '-r300');
 close(fig);
